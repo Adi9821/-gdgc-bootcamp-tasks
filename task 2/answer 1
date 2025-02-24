@@ -1,0 +1,11 @@
+def matrix_dot_vector(a:list[list[int|float]],b:list[int|float])-> list[int|float]:
+    if len(a[0]) != len(b):
+        return -1
+    answer = []
+    for i in a:
+        product = 0
+        for j in range(len(i)):
+            product+=(i[j] * b[j])
+        answer.append(product)
+
+    return answer
