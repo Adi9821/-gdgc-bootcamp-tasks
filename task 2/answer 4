@@ -1,0 +1,7 @@
+test_list = [[5, 6, 3], [8, 3, 1], [9, 10, 4], [8, 4, 2]]
+print("The original list : " + str(test_list))
+res = [sum(idx) / len(idx) for idx in zip(*test_list)]
+ 
+# extracts all elements mean
+res = sum(res) / len(res)
+print("Matrix Mean : " + str(res))
