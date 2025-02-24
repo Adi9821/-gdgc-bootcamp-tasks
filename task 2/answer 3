@@ -1,0 +1,8 @@
+
+import numpy as np 
+gdg = np.matrix('[1, 2; 4, 5; 7, 8]') 
+           
+# applying matrix.reshape() method 
+new = gdg.reshape((2, 3)) 
+     
+print(new)
